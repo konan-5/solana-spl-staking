@@ -4,10 +4,10 @@ const Contact = () => {
   return (
     <section id="waitlist" className="overflow-hidden py-16 md:py-20 lg:py-28">
       <div className="container">
-        <div className=" flex flex-wrap">
-          <div className="w-full px-4 lg:w-7/12 xl:w-8/12">
+        <div className="flex flex-wrap">
+          <div className="w-full mx-auto px-4 lg:w-7/12 xl:w-8/12">
             <div
-              className="wow mx-auto fadeInUp shadow-three dark:bg-gray-dark mb-12 rounded-sm bg-white px-8 py-11 sm:p-[55px] lg:mb-5 lg:px-8 xl:p-[55px]"
+              className="wow fadeInUp shadow-three dark:bg-gray-dark mb-12 rounded-sm bg-white px-8 py-11 sm:p-[55px] lg:mb-5 lg:px-8 xl:p-[55px]"
               data-wow-delay=".15s
               "
             >

@@ -3,22 +3,27 @@
 import Image from "next/image";
 import { useState } from "react";
 import SectionTitle from "../Common/SectionTitle";
-
+import SingleFeature from "./SingleFeature";
 import ModalVideo from "react-modal-video";
+import featuresData from "./featuresData";
 
-const Video = () => {
+const Features = () => {
   const [isOpen, setOpen] = useState(false);
 
   return (
     <section className="relative z-10 py-16 md:py-20 lg:py-28">
       <div className="container">
         <SectionTitle
-          title="We are ready to help"
+          title="Why Choose Tendr?"
           paragraph="There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form."
           center
           mb="80px"
         />
-
+        <div className="grid grid-cols-1 gap-x-8 gap-y-14 md:grid-cols-2">
+          {featuresData.map((feature) => (
+            <SingleFeature key={feature.id} feature={feature} />
+          ))}
+        </div>
         <div className="-mx-4 flex flex-wrap">
           <div className="w-full px-4">
             <div
@@ -63,4 +68,4 @@ const Video = () => {
   );
 };
 
-export default Video;
+export default Features;
