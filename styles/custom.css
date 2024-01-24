@@ -1,0 +1,36 @@
+.flag-button {
+    width: 40px;
+    /* Diameter of the circle */
+    height: 40px;
+    /* Diameter of the circle */
+    border-radius: 50%;
+    /* Makes the button round */
+    border: 2px solid #555;
+    /* Darker border for 3D effect */
+    cursor: pointer;
+    background-size: cover;
+    outline: none;
+    box-shadow: 0px 4px #888;
+    /* Shadow for 3D raised effect */
+    transition: all 0.3s ease;
+    /* Smooth transition for the press effect */
+}
+
+.pressed {
+    box-shadow: 0px 2px #888;
+    /* Less shadow for pressed effect */
+    transform: translateY(2px);
+    /* Slight move down */
+    border: 2px solid #999;
+    /* Lighter border when pressed */
+}
+
+#irishFlag {
+    background-image: url('https://cdn.countryflags.com/thumbs/ireland/flag-round-250.png');
+    /* Replace with your Irish flag image path */
+}
+
+#ukFlag {
+    background-image: url('https://cdn.countryflags.com/thumbs/united-kingdom/flag-round-250.png');
+    /* Replace with your UK flag image path */
+}
