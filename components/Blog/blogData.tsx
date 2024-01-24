@@ -34,7 +34,7 @@ const blogData: Blog[] = [
     title: "Tips to quickly improve your coding speed.",
     paragraph:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet dictum neque, laoreet dolor.",
-    image: "/images/blog/blog-03.jpg",
+    image: "/images/blog/blog-01.jpg",
     author: {
       name: "Lethium Deo",
       image: "/images/blog/author-03.png",

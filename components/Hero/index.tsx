@@ -1,3 +1,4 @@
+import { styles } from "@/styles/styles";
 import Link from "next/link";
 
 const Hero = () => {
@@ -5,7 +6,7 @@ const Hero = () => {
     <>
       <section
         id="home"
-        className="dark:bg-gray-dark relative z-10 overflow-hidden bg-white pb-16 pt-[120px] md:pb-[120px] md:pt-[150px] xl:pb-[160px] xl:pt-[180px] 2xl:pb-[200px] 2xl:pt-[210px]"
+        className="dark:bg-gray-dark relative z-10 overflow-hidden bg-white pb-[40px] pt-[140px] md:pb-[60px] md:pt-[160px] xl:pb-[80px] xl:pt-[180px] 2xl:pb-[100px] 2xl:pt-[180px]"
       >
         <div className="container">
           <div className="-mx-4 flex flex-wrap">
@@ -14,27 +15,19 @@ const Hero = () => {
                 className="wow fadeInUp mx-auto max-w-[800px] text-center"
                 data-wow-delay=".2s"
               >
-                <h1 className="mb-5 text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight">
-                  Free and Open-Source Next.js Template for Startup & SaaS
+                <h1 className={`mb-5 text-3xl font-bold leading-tight sm:text-5xl md:text-6xl bg-clip-text text-transparent bg-[linear-gradient(270deg,#5200ff_18.29%,#58adfe_47.4%,#7978ff_116.45%)]`}>
+                  Automated Tendering
                 </h1>
+                <h2 className="text-3xl leading-tight sm:text-4xl md:text-5xl text-black dark:text-white font-medium">Streamline Your Success</h2>
                 <p className="dark:text-body-color-dark mb-12 text-base !leading-relaxed text-body-color sm:text-lg md:text-xl">
-                  Startup is free Next.js template for startups and SaaS
-                  business websites comes with all the essential pages,
-                  components, and sections you need to launch a complete
-                  business website, built-with Next 13.x and Tailwind CSS.
+                  Tendr is your innovative tool for navigating the complex world of tender submissions. Tailored for contractors and suppliers, our web app simplifies your journey from opportunity discovery to bid submission.
                 </p>
                 <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
                   <Link
                     href="https://nextjstemplates.com/templates/saas-starter-startup"
                     className="rounded-sm bg-primary px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-primary/80"
                   >
-                    🔥 Get Pro
-                  </Link>
-                  <Link
-                    href="https://github.com/NextJSTemplates/startup-nextjs"
-                    className="inline-block rounded-sm bg-black px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-black/90 dark:bg-white/10 dark:text-white dark:hover:bg-white/5"
-                  >
-                    Star on GitHub
+                    🔥 Join WaitList
                   </Link>
                 </div>
               </div>

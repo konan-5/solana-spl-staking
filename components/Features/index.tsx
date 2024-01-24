@@ -5,10 +5,10 @@ import featuresData from "./featuresData";
 const Features = () => {
   return (
     <>
-      <section id="features" className="py-16 md:py-20 lg:py-28">
+      <section id="features" className="py-2 md:py-3 lg:py-4">
         <div className="container">
           <SectionTitle
-            title="Main Features"
+            title="Featured Tenders"
             paragraph="There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form."
             center
           />
