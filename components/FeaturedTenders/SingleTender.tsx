@@ -25,7 +25,7 @@ const SingleTender = ({ testimonial }: { testimonial: Testimonial }) => {
         data-wow-delay=".1s"
       >
         <div className="border-b border-opacity-10 pb-1 mb-3 text-body-color dark:border-white dark:border-opacity-10 dark:text-white text-[20px] font-semibold ">Construction Work</div>
-        <p className=" border-body-color  text-base leading-relaxed text-body-color dark:border-white dark:border-opacity-10">
+        <p className=" border-body-color  text-base leading-relaxed text-body-color dark:text-body-color-dark dark:border-white dark:border-opacity-10">
           “MORMQS Ltd T/A MacMinn O' Reilly Mahon</p>
         <div className="flex items-center">
           <div className="w-full">
@@ -33,8 +33,8 @@ const SingleTender = ({ testimonial }: { testimonial: Testimonial }) => {
               {name}
             </h3>
             <div className="flex justify-between items-center">
-              <p className="text-sm text-body-color">Deadline: 24/1/2024</p>
-              <p className="text-sm text-body-color">€ {new Intl.NumberFormat('en-US').format(parseFloat(`81000000`))}</p>
+              <p className="text-sm text-body-color dark:text-body-color-dark">Deadline: 24/1/2024</p>
+              <p className="text-sm text-body-color dark:text-body-color-dark">€ {new Intl.NumberFormat('en-US').format(parseFloat(`81000000`))}</p>
             </div>
           </div>
         </div>

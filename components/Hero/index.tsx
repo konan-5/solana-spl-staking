@@ -2,7 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 import SingleWidget from "./SingleWidget";
 const widget = {
-  image: "/images/blog/blog-01.jpg",
   is_private: false,
   newTenders: 23,
   totalTenders: 4153,
@@ -51,13 +50,6 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        {/* <div className="absolute right-0 top-[100px] z-[-1] opacity-30 lg:opacity-100 w-[600px] h-[100px]">
-          <div className="absolute top-0 right-0 bg-[#3e4a72] w-[200px] h-[50px] -rotate-45 z-10">
-
-          </div>
-          <div className="absolute bg-[#1e284b] w-[200px] h-[50px] rotate-45">
-          </div>
-        </div> */}
         <div className="absolute right-0 top-[100px] overflow-hidden w-full lg:w-1/2 h-full lg:h-[70%] z-[-1] opacity-30 lg:opacity-50">
           <div className="absolute w-2/3 h-full z-10 -left-1/3 top-1/3 hidden lg:block">
             <div className="absolute w-full h-1/2 -top-[50%] dark:bg-gray-dark bg-white -rotate-45">

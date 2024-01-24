@@ -14,7 +14,7 @@ const Contact = () => {
               <h2 className="mb-3 text-2xl font-bold text-black dark:text-white sm:text-3xl lg:text-2xl xl:text-3xl">
                 Join the Waitlist
               </h2>
-              <p className="mb-12 text-base font-medium text-body-color">
+              <p className="mb-12 text-base font-medium text-body-color-dark">
                 By submitting this form, your firm will join our waitlist to get early access to TendrAi. When your firm has been selected, we will reach out to set up a demo.
               </p>
               <form>
