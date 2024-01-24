@@ -1,5 +1,3 @@
-import NewsLatterBox from "./NewsLatterBox";
-
 const Contact = () => {
   return (
     <section id="waitlist" className="overflow-hidden py-16 md:py-20 lg:py-28">
