@@ -17,7 +17,7 @@ const FlagSelector: React.FC = () => {
                     className="mt-[6px] block"
                 />
             </button>
-            <div className={`absolute w-[100px] -right-1/2 top-[60px] bg-black  dark:bg-white/20 dark:hover:bg-white/5 transition-all duration-300 ${langMenu ? "opacity-1" : "opacity-0"}`}>
+            <div className={`absolute w-[100px] -right-1/2 top-[60px] bg-black  dark:bg-white/20 dark:hover:bg-white/5 transition-all duration-300 ${langMenu ? "opacity-1" : "hidden opacity-0"}`}>
                 {
                     countries.map((lng, key) => (
                         <button onClick={() => {setCountry(countries[key]); setLangMenu(false)}} className='w-full px-5 hover:bg-white/40 dark:hover:bg-white/5' key={key}>

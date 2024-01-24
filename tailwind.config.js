@@ -38,6 +38,7 @@ module.exports = {
         "white": "#FFFFFF",
         "black": "#121723",
         "dark": "#1D2430",
+        "navy": "#09347a",
         "primary": "#4A6CF7",
         "yellow": "#FBB040",
         "body-color": "#394456",
