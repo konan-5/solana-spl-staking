@@ -1,4 +1,4 @@
-import AboutSection from "@/components/About/About";
+import AboutSection from "@/components/AboutSection/AboutSection";
 import ScrollUp from "@/components/Common/ScrollUp";
 import Contact from "@/components/Contact";
 import FeaturedTenders from "@/components/FeaturedTenders";

@@ -9,9 +9,6 @@
     font-family: "Inter", sans-serif;
   }
 }
-.bg-black{
-  background-color: rgb(9 14 52);
-}
 @layer components {
   input[type="checkbox"]:checked ~ label span svg {
     @apply inline-flex;
