@@ -623,3 +623,8 @@
  ✓ Compiled in 293ms (847 modules)
  ✓ Compiled in 535ms (847 modules)
  ✓ Compiled /not-found in 687ms (852 modules)
+ ✓ Compiled in 664ms (437 modules)
+ ○ Compiling /_error ...
+ ✓ Compiled /_error in 464ms (556 modules)
+ ✓ Compiled in 582ms (556 modules)
+ ✓ Compiled /not-found in 1358ms (1022 modules)

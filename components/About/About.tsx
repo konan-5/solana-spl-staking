@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-const AboutSectionTwo = () => {
+const AboutSection = () => {
   return (
     <section className="py-16 md:py-20 lg:py-28 bg-white dark:bg-gray-dark">
       <div className="container">
@@ -50,4 +50,4 @@ const AboutSectionTwo = () => {
   );
 };
 
-export default AboutSectionTwo;
+export default AboutSection;
