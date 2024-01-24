@@ -61,17 +61,15 @@ const Header = () => {
                   width={140}
                   height={30}
                   className="w-full dark:hidden"
-                />
+                /> */}
                 <Image
-                  src="/images/logo/logo.svg"
+                  src="/images/logo/logo-dark.svg"
                   alt="logo"
-                  width={140}
+                  width={100}
                   height={30}
                   className="hidden w-full dark:block"
-                /> */}
-                <p className="text-3xl font-black">
-                  Tendr
-                </p>
+                />
+     
               </Link>
             </div>
             <div className="flex w-full items-center justify-between px-4">

@@ -40,7 +40,14 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        <div className="absolute right-0 top-0 z-[-1] opacity-30 lg:opacity-100">
+        {/* <div className="absolute right-0 top-[100px] z-[-1] opacity-30 lg:opacity-100 w-[600px] h-[100px]">
+          <div className="absolute top-0 right-0 bg-[#3e4a72] w-[200px] h-[50px] -rotate-45 z-10">
+
+          </div>
+          <div className="absolute bg-[#1e284b] w-[200px] h-[50px] rotate-45">
+          </div>
+        </div> */}
+        {/* <div className="absolute right-0 top-0 z-[-1] opacity-30 lg:opacity-100">
           <svg
             width="450"
             height="556"
@@ -280,7 +287,7 @@ const Hero = () => {
               </radialGradient>
             </defs>
           </svg>
-        </div>
+        </div> */}
       </section>
     </>
   );
