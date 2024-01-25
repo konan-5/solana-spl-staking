@@ -1,6 +1,6 @@
 const Contact = () => {
   return (
-    <section id="waitlist" className="overflow-hidden py-16 md:py-20 lg:py-28">
+    <section id="waitlist" className="overflow-hidden py-16 md:py-20 lg:py-28 bg-gray-light dark:bg-black-dark">
       <div className="container">
         <div className="flex flex-wrap">
           <div className="w-full mx-auto px-4 lg:w-7/12 xl:w-8/12">

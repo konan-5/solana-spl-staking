@@ -1,7 +1,9 @@
+"use client"
 import Image from "next/image";
 import Link from "next/link";
 import SingleWidget from "./SingleWidget";
 import SearchBar from "../Header/SeachBar";
+import { useEffect } from "react";
 
 const widget = {
   is_private: false,
@@ -9,6 +11,10 @@ const widget = {
   totalTenders: 4153,
 }
 const Hero = () => {
+
+  useEffect(() => {
+    
+  }, [])
   return (
     <>
       <section
@@ -57,12 +63,12 @@ const Hero = () => {
         </div>
         <div className="absolute right-0 top-[100px] overflow-hidden w-full lg:w-1/2 h-full lg:h-[70%] z-[-1]">
           <div className="absolute w-2/3 h-full z-10 -left-1/3 top-1/3 hidden lg:block">
-            <div className="absolute w-full h-1/2 -top-[50%] dark:bg-navy bg-white -rotate-45">
+            <div className="absolute w-full h-1/2 -top-[50%] dark:bg-black bg-white -rotate-45">
             </div>
-            <div className="absolute w-full h-1/2 bottom-[40%] dark:bg-navy bg-white rotate-[60deg]">
+            <div className="absolute w-full h-1/2 bottom-[40%] dark:bg-black bg-white rotate-[60deg]">
             </div>
           </div>
-          <div className="absolute w-full h-full  opacity-30 lg:opacity-80">
+          <div className="absolute w-full h-full  opacity-30 lg:opacity-60">
             <Image className="object-cover" src={`/images/hero/background.png`} alt="" fill />
           </div>
         </div>

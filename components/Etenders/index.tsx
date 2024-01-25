@@ -1,9 +1,10 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import SectionTitle from "../Common/SectionTitle";
 import SingleEtender from "./SingleTender";
 import { etenders } from "./mockData";
 import Pagination from '@mui/material/Pagination';
+import axios from "axios";
 
 const Etenders = () => {
 
@@ -19,8 +20,28 @@ const Etenders = () => {
         page * itemsPerPage
     );
 
+    useEffect(() => {
+        const queryParams = new URLSearchParams(location.search);
+        const cpv: string = queryParams.get('cpv') !== null ? queryParams.get('cpv')! : "";
+        if(cpv == 'latest') {
+            axios.get(
+                `http://3.253.3.32:9002/api/landing/latest/`
+            ).then((response) => {console.log(response)})
+            .catch((err) => {console.log(err)})
+        }else {
+            axios.post(
+                `http://3.253.3.32:9002/api/landing/search/`,
+                {cpv: cpv},
+            ).then((resp) => {
+                console.log(resp)
+            }).catch((err) => {
+                console.log(err)
+            })
+        }
+    }, [])
+
     return (
-        <section id="etenders" className="relative z-10 pb-[40px] pt-[120px] md:pb-[60px] md:pt-[140px] xl:pb-[80px] xl:pt-[180px] 2xl:pb-[100px] 2xl:pt-[180px] bg-white dark:bg-navy">
+        <section id="etenders" className="relative z-10 py-16 md:py-20 lg:py-28 pb-[40px] mt-[80px] md:pb-[60px] md:mt-[140px] xl:pb-[80px] xl:mt-[120px] 2xl:pb-[100px] 2xl:mt-[140px] bg-gray-light dark:bg-black-dark">
             <div className="container">
                 <SectionTitle
                     title="Calls for tenders"
@@ -28,8 +49,8 @@ const Etenders = () => {
                     center
                     width="665px"
                 />
-                <h5 className="text-body-color dark:text-white text-[20px] font-semibold ">{etenders.length} tenders found</h5>
-                <div className="grid grid-cols-1 gap-x-8 gap-y-5">
+                <h5 className="text-body-color dark:text-white text-[20px] font-semibold mb-3"><strong>{etenders.length}</strong> tenders found</h5>
+                <div className="grid grid-cols-1 gap-x-8 gap-y-5 ">
                     {
                         currentPageData.map((item, key) => (
                             <SingleEtender

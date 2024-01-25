@@ -13,7 +13,7 @@ const SingleWidget = ({ widget }: { widget: Blog }) => {
   return (
     <>
       <div
-        className="wow fadeInUp max-w-[360px] mx-auto hover:shadow-two dark:hover:shadow-gray-dark group relative overflow-hidden rounded-sm bg-white shadow-one duration-300 dark:bg-white/10"
+        className="wow fadeInUp max-w-[360px] mx-auto hover:shadow-two dark:hover:shadow-gray-dark group relative overflow-hidden rounded-sm bg-white shadow-one duration-300 dark:bg-white/20"
         data-wow-delay=".1s"
       >
         {/* <Link
@@ -24,7 +24,7 @@ const SingleWidget = ({ widget }: { widget: Blog }) => {
         </Link> */}
         <div className="p-6 sm:p-8 md:px-6 md:py-8 lg:p-8 xl:px-5 xl:py-8 2xl:p-8">
           <Link
-            href="/etenders"
+            href="/etenders?cpv=latest"
             className="">
             <span className="right-6 top-6 z-20 inline-flex items-center justify-center rounded-full bg-primary px-4 py-2 text-sm font-semibold capitalize text-white">
               View Latest Tenders

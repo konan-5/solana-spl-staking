@@ -25,7 +25,7 @@ const testimonialData = [
 const FeaturedTenders = () => {
   return (
     <>
-      <section id="features" className="py-3 md:py-4 lg:py-6">
+      <section id="features" className="py-3 md:py-4 lg:py-6 bg-gray-light dark:bg-black-dark">
         <div className="container">
           <SectionTitle
             title="Featured Tenders"

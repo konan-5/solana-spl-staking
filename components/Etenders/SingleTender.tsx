@@ -33,10 +33,10 @@ const SingleEtender = (props: {
                     }
                 </div>
                 <div className="md:flex justify-between items-center border-b border-opacity-10 mb-3 pb-1 dark:border-white dark:border-opacity-10">
-                    <h5 className=" text-body-color dark:text-white text-[24px] font-semibold ">Client: {ca}</h5>
+                    <h5 className=" text-body-color dark:text-white text-[24px] font-semibold overflow-hidden text-ellipsis whitespace-nowrap w-[70%] ">Client: {ca}</h5>
                     <div className="sm:flex justify-between md:block">
                         <p className="">Value: € {estimated_value}</p>
-                        <p className="">Deadline: € {formatDate(tenders_submission_deadline)}</p>
+                        <p className="">Deadline: {formatDate(tenders_submission_deadline)}</p>
                     </div>
                 </div>
                 <p className=" border-body-color mb-2 text-base leading-relaxed text-body-color dark:text-body-color-dark dark:border-white dark:border-opacity-10">{title}</p>

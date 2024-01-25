@@ -1068,3 +1068,153 @@
  ✓ Compiled in 2.3s (1472 modules)
  ✓ Compiled in 1191ms (1472 modules)
  ✓ Compiled in 742ms (1472 modules)
+ ✓ Compiled in 4.2s (807 modules)
+ ✓ Compiled in 1774ms (807 modules)
+ ✓ Compiled in 1335ms (807 modules)
+ ✓ Compiled in 2.9s (1472 modules)
+ ✓ Compiled in 1046ms (1472 modules)
+ ✓ Compiled in 3s (807 modules)
+ ✓ Compiled in 4s (807 modules)
+ ✓ Compiled in 5.3s (1472 modules)
+ ✓ Compiled in 816ms (1472 modules)
+ ✓ Compiled in 1224ms (1472 modules)
+ ✓ Compiled in 1933ms (1472 modules)
+ ✓ Compiled in 1249ms (1472 modules)
+ ✓ Compiled in 2.4s (1472 modules)
+ ✓ Compiled in 2.8s (1472 modules)
+ ✓ Compiled in 4.7s (1472 modules)
+ ✓ Compiled in 1538ms (1472 modules)
+ ✓ Compiled in 4.1s (1472 modules)
+ ✓ Compiled in 828ms (1472 modules)
+ ✓ Compiled in 2s (1472 modules)
+ ✓ Compiled in 1221ms (1472 modules)
+ ✓ Compiled in 623ms (1472 modules)
+ ✓ Compiled in 5.3s (1472 modules)
+ ✓ Compiled in 1225ms (1472 modules)
+ ✓ Compiled in 1285ms (1472 modules)
+ ✓ Compiled in 1430ms (1472 modules)
+ ✓ Compiled in 2.4s (1472 modules)
+ ✓ Compiled in 1062ms (1472 modules)
+ ✓ Compiled in 2.8s (1472 modules)
+ ✓ Compiled in 1144ms (1472 modules)
+ ✓ Compiled in 2.4s (1472 modules)
+ ✓ Compiled in 1382ms (1472 modules)
+ ✓ Compiled in 1382ms (1472 modules)
+ ✓ Compiled in 1496ms (1472 modules)
+ ✓ Compiled in 1553ms (1472 modules)
+ ✓ Compiled in 9.3s (1472 modules)
+ ✓ Compiled in 3.8s (1472 modules)
+ ✓ Compiled in 3s (1472 modules)
+ ✓ Compiled in 6.7s (1472 modules)
+ ✓ Compiled in 1238ms (1472 modules)
+ ✓ Compiled in 1720ms (1472 modules)
+ ✓ Compiled in 4.4s (1472 modules)
+ ✓ Compiled in 1519ms (1472 modules)
+ ✓ Compiled in 2.4s (1472 modules)
+ ✓ Compiled in 961ms (1472 modules)
+ ✓ Compiled in 1282ms (1472 modules)
+ ✓ Compiled in 1750ms (1472 modules)
+ ✓ Compiled in 4.5s (1472 modules)
+ ✓ Compiled in 5.2s (1472 modules)
+ ✓ Compiled in 1739ms (1472 modules)
+ ✓ Compiled in 5s (1472 modules)
+ ✓ Compiled in 1070ms (1472 modules)
+ ✓ Compiled in 1453ms (1472 modules)
+ ✓ Compiled in 1799ms (1472 modules)
+ ✓ Compiled in 5s (1472 modules)
+ ✓ Compiled in 4.8s (1472 modules)
+ ✓ Compiled in 1756ms (1472 modules)
+ ✓ Compiled in 2.3s (1472 modules)
+ ✓ Compiled in 2.8s (1472 modules)
+ ✓ Compiled in 2.4s (1472 modules)
+ ✓ Compiled in 2.6s (1472 modules)
+ ✓ Compiled in 6.9s (1472 modules)
+
+> startup-nextjs-template@0.2.0 dev
+> next dev -p 9004
+
+  ▲ Next.js 13.5.6
+  - Local:        http://localhost:9004
+
+ ✓ Ready in 3.5s
+ ○ Compiling /page ...
+ ✓ Compiled /page in 8.6s (901 modules)
+ ✓ Compiled in 589ms (437 modules)
+ ✓ Compiled in 1907ms (866 modules)
+ ✓ Compiled in 365ms (866 modules)
+ ✓ Compiled in 386ms (866 modules)
+ ✓ Compiled in 281ms (866 modules)
+ ✓ Compiled in 279ms (866 modules)
+ ✓ Compiled in 399ms (437 modules)
+ ✓ Compiled in 475ms (437 modules)
+ ✓ Compiled /page in 586ms (429 modules)
+ ○ Compiling /etenders/page ...
+ ✓ Compiled /etenders/page in 4.9s (1302 modules)
+ ○ Compiling /not-found ...
+ ✓ Compiled /not-found in 4.6s (1463 modules)
+ ✓ Compiled in 2.4s (1472 modules)
+ ✓ Compiled in 536ms (1472 modules)
+ ✓ Compiled in 3.2s (1472 modules)
+ ✓ Compiled in 576ms (1472 modules)
+ ✓ Compiled in 6.1s (1540 modules)
+ ✓ Compiled in 828ms (1540 modules)
+ ✓ Compiled in 1761ms (1540 modules)
+ ✓ Compiled in 514ms (1472 modules)
+ ✓ Compiled in 585ms (1472 modules)
+ ✓ Compiled in 2.3s (1472 modules)
+ ✓ Compiled in 1759ms (1472 modules)
+   Reload env: .env
+ ✓ Compiled in 1146ms (1458 modules)
+   Reload env: .env
+ ✓ Compiled in 265ms (1458 modules)
+   Reload env: .env.local
+ ✓ Compiled in 281ms (1458 modules)
+ ✓ Compiled in 3s (1603 modules)
+ ✓ Compiled /not-found in 1660ms (1594 modules)
+ ✓ Compiled in 1678ms (1608 modules)
+[?25h
+
+> startup-nextjs-template@0.2.0 dev
+> next dev -p 9004
+
+  ▲ Next.js 13.5.6
+  - Local:        http://localhost:9004
+  - Environments: .env.local
+
+ ✓ Ready in 3.1s
+ ○ Compiling /etenders/page ...
+ ✓ Compiled /etenders/page in 13.9s (1176 modules)
+ ✓ Compiled in 906ms (563 modules)
+ ✓ Compiled /not-found in 1229ms (1132 modules)
+   Reload env: .env.local
+ ✓ Compiled in 1101ms (1127 modules)
+[?25h
+
+> startup-nextjs-template@0.2.0 dev
+> next dev -p 9004
+
+  ▲ Next.js 13.5.6
+  - Local:        http://localhost:9004
+  - Environments: .env.local
+
+ ✓ Ready in 2.8s
+ ○ Compiling /etenders/page ...
+ ✓ Compiled /etenders/page in 15.1s (1176 modules)
+ ✓ Compiled in 915ms (563 modules)
+ ✓ Compiled /not-found in 1689ms (1132 modules)
+[?25h
+
+> startup-nextjs-template@0.2.0 dev
+> next dev -p 9004
+
+  ▲ Next.js 13.5.6
+  - Local:        http://localhost:9004
+  - Environments: .env.local
+
+ ✓ Ready in 2.2s
+ ○ Compiling /etenders/page ...
+ ✓ Compiled /etenders/page in 7.4s (1141 modules)
+ ✓ Compiled in 819ms (563 modules)
+ ✓ Compiled /page in 2.9s (1433 modules)
+ ✓ Compiled in 1549ms (1447 modules)
+ ✓ Compiled in 656ms (1447 modules)

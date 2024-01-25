@@ -25,7 +25,7 @@ export default function RootLayout({
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet' />
       </head>
 
-      <body className={`bg-white dark:bg-navy-dark ${inter.className}`}>
+      <body className={`bg-white dark:bg-black ${inter.className}`}>
         <Providers>
           <Header />
           {children}
