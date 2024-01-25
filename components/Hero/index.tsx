@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import SingleWidget from "./SingleWidget";
+import SearchBar from "../Header/SeachBar";
 
 const widget = {
   is_private: false,
@@ -12,7 +13,7 @@ const Hero = () => {
     <>
       <section
         id="home"
-        className="dark:bg-navy relative z-10 overflow-hidden bg-white pb-[40px] pt-[140px] md:pb-[60px] md:pt-[160px] xl:pb-[80px] xl:pt-[180px] 2xl:pb-[100px] 2xl:pt-[180px]"
+        className="dark:bg-navy relative z-10 overflow-hidden bg-white pb-[40px] pt-[120px] md:pb-[60px] md:pt-[140px] xl:pb-[80px] xl:pt-[180px] 2xl:pb-[100px] 2xl:pt-[180px]"
       >
         <div className="container">
           <div className="-mx-4 flex flex-wrap">
@@ -30,7 +31,10 @@ const Hero = () => {
                     Tendr is your innovative tool for navigating the complex world of tender submissions. Tailored for contractors and suppliers, our web app simplifies your journey from opportunity discovery to bid submission.
                   </p>
                 </div>
-                <div className="mb-10 lg:hidden">
+                <div className="mb-5 lg:hidden">
+                  <div className="mb-5 w-full">
+                    <SearchBar />
+                  </div>
                   <SingleWidget widget={widget} />
                 </div>
                 <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">

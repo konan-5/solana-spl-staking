@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import ThemeToggler from "./ThemeToggler";
 import menuData from "./menuData";
 import FlagSelector from "./FlagSelector";
+import SearchBar from "./SeachBar";
 
 const Header = () => {
   // Navbar toggle
@@ -70,6 +71,9 @@ const Header = () => {
                 className="hidden w-full dark:block"
               />
             </Link>
+            <div className="hidden lg:block">
+              <SearchBar />
+            </div>
             <div className="flex items-center justify-end">
               <FlagSelector />
               <div>

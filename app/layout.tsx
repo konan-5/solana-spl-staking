@@ -20,8 +20,10 @@ export default function RootLayout({
       {/*
         <head /> will contain the components returned by the nearest parent
         head.js. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
-      */} 
-      <head />
+      */}
+      <head>
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet' />
+      </head>
 
       <body className={`bg-[#FCFCFC] dark:bg-navy-dark ${inter.className}`}>
         <Providers>
