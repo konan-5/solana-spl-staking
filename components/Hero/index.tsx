@@ -13,7 +13,7 @@ const Hero = () => {
     <>
       <section
         id="home"
-        className="relative z-10 overflow-hidden pb-[40px] pt-[120px] md:pb-[60px] md:pt-[140px] xl:pb-[80px] xl:pt-[180px] 2xl:pb-[100px] 2xl:pt-[180px]"
+        className="relative z-10 dark:bg-black overflow-hidden pb-[40px] pt-[120px] md:pb-[60px] md:pt-[140px] xl:pb-[80px] xl:pt-[180px] 2xl:pb-[100px] 2xl:pt-[180px]"
       >
         <div className="container">
           <div className="-mx-4 flex flex-wrap">
@@ -55,14 +55,14 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        <div className="absolute right-0 top-[100px] overflow-hidden w-full lg:w-1/2 h-full lg:h-[70%] z-[-1] opacity-30 lg:opacity-70">
+        <div className="absolute right-0 top-[100px] overflow-hidden w-full lg:w-1/2 h-full lg:h-[70%] z-[-1]">
           <div className="absolute w-2/3 h-full z-10 -left-1/3 top-1/3 hidden lg:block">
             <div className="absolute w-full h-1/2 -top-[50%] dark:bg-navy bg-white -rotate-45">
             </div>
             <div className="absolute w-full h-1/2 bottom-[40%] dark:bg-navy bg-white rotate-[60deg]">
             </div>
           </div>
-          <div className="absolute w-full h-full">
+          <div className="absolute w-full h-full  opacity-30 lg:opacity-80">
             <Image className="object-cover" src={`/images/hero/background.png`} alt="" fill />
           </div>
         </div>

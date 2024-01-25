@@ -3,8 +3,21 @@ import { useState } from "react";
 import SectionTitle from "../Common/SectionTitle";
 import SingleEtender from "./SingleTender";
 import { etenders } from "./mockData";
+import Pagination from '@mui/material/Pagination';
 
 const Etenders = () => {
+
+    const itemsPerPage = 10;
+    const [page, setPage] = useState(1);
+    const count = Math.ceil(etenders.length / itemsPerPage);
+
+    const handleChange = (event, value) => {
+        setPage(value);
+    };
+    const currentPageData = etenders.slice(
+        (page - 1) * itemsPerPage,
+        page * itemsPerPage
+    );
 
     return (
         <section id="etenders" className="relative z-10 pb-[40px] pt-[120px] md:pb-[60px] md:pt-[140px] xl:pb-[80px] xl:pt-[180px] 2xl:pb-[100px] 2xl:pt-[180px] bg-white dark:bg-navy">
@@ -15,18 +28,28 @@ const Etenders = () => {
                     center
                     width="665px"
                 />
-
+                <h5 className="text-body-color dark:text-white text-[20px] font-semibold ">{etenders.length} tenders found</h5>
                 <div className="grid grid-cols-1 gap-x-8 gap-y-5">
                     {
-                        etenders.map((item, key) => (
+                        currentPageData.map((item, key) => (
                             <SingleEtender
                                 {...item}
-                                key={key} />
+                                key={`etender${key}`} />
                         ))
                     }
                 </div>
+                <Pagination
+                    count={count}
+                    page={page}
+                    size="small"
+                    sx={{
+                        mt: 2,
+                        display:'flex',
+                        justifyContent: 'flex-end'
+                    }}
+                    onChange={handleChange}
+                />
             </div>
-
             <div className="absolute bottom-0 left-0 z-[-1]">
                 <svg
                     width="239"

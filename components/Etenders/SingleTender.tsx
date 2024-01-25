@@ -1,3 +1,4 @@
+"use client"
 const SingleEtender = (props: {
     cpv_codes: string[]
     ca: string
@@ -8,6 +9,12 @@ const SingleEtender = (props: {
     cft_files: string
 }) => {
     const { cpv_codes, ca, title, estimated_value, tenders_submission_deadline, notice_pdf, cft_files } = props;
+    const formatDate = (deadline: string) => {
+        const date = new Date(deadline);
+        const isoString = date.toISOString();
+        const [year, month, day] = isoString.split('T')[0].split('-');
+        return `${day}/${month}/${year}`;
+    }
     return (
         <div className="w-full">
             <div
@@ -16,16 +23,20 @@ const SingleEtender = (props: {
             >
                 <div className="flex mb-3">
                     {
-                        cpv_codes.map((item, key) => (
-                            <div className="w-[200px] mr-4 border-[1px] border-stroke dark:border-body-color bg-[#f8f8f8] dark:bg-[#2C303B] rounded-full text-center">{item}</div>
-                        ))
+                        cpv_codes.map((item, key) => {
+                            if (key < 1) {
+                                return (
+                                    <div key={`cpv_code${key}`} className="w-[200px] mr-4 border-[1px] border-stroke dark:border-body-color bg-[#f8f8f8] dark:bg-[#2C303B] rounded-full text-center">{item}</div>
+                                )
+                            }
+                        })
                     }
                 </div>
                 <div className="md:flex justify-between items-center border-b border-opacity-10 mb-3 pb-1 dark:border-white dark:border-opacity-10">
                     <h5 className=" text-body-color dark:text-white text-[24px] font-semibold ">Client: {ca}</h5>
                     <div className="sm:flex justify-between md:block">
                         <p className="">Value: € {estimated_value}</p>
-                        <p className="">Deadline: € {tenders_submission_deadline}</p>
+                        <p className="">Deadline: € {formatDate(tenders_submission_deadline)}</p>
                     </div>
                 </div>
                 <p className=" border-body-color mb-2 text-base leading-relaxed text-body-color dark:text-body-color-dark dark:border-white dark:border-opacity-10">{title}</p>
