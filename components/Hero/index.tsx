@@ -13,7 +13,7 @@ const Hero = () => {
     <>
       <section
         id="home"
-        className="dark:bg-navy relative z-10 overflow-hidden bg-white pb-[40px] pt-[120px] md:pb-[60px] md:pt-[140px] xl:pb-[80px] xl:pt-[180px] 2xl:pb-[100px] 2xl:pt-[180px]"
+        className="relative z-10 overflow-hidden pb-[40px] pt-[120px] md:pb-[60px] md:pt-[140px] xl:pb-[80px] xl:pt-[180px] 2xl:pb-[100px] 2xl:pt-[180px]"
       >
         <div className="container">
           <div className="-mx-4 flex flex-wrap">
